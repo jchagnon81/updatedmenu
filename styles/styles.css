@@ -1,0 +1,264 @@
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: whitesmoke;
+    color: rgb(45, 40, 40);
+}
+
+header {
+    background-color: lightgray;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    background-color: grey;
+    padding: .5em 0em;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: .5em 2em;
+}
+
+nav ul a {
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+nav ul a:hover, a:focus {
+    color: rgb(45, 40, 40);
+    background-color: white;
+}
+
+.main_home {
+    height: 500px;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-image: url("../images/polloalabrasa.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+
+.section_home {
+    padding-top: 3em;
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+.section_home p {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.span_home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.span_home img {
+    margin: 1.5em;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(45, 40, 40);
+}
+
+.top {
+    text-align: center;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.main_menu {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding-left: 2em;
+    background-color: white;
+    padding-top: 2em;
+}
+
+.main_menu h3 {
+    text-align: left;
+    padding-left: 1em;
+}
+
+.main_menu img {
+    width: 175px;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.main_menu ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.description {
+    height: 175px;
+}
+
+.menuform {
+    padding-left: 75px;
+}
+
+.main_about {
+    display: flex;
+    flex-direction: row;
+}
+
+.main_about p {
+    margin-left: 1em;
+    padding-right: 1em;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.main_contact {
+    padding: 2em 0 2em 5em;
+    background-color: white;
+}
+
+.main_contact a {
+    color: rgb(45, 40, 40);
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+#newsletter {
+    padding-left: 5em;
+    padding-top: 2em;
+}
+
+footer {
+    clear: both;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 80%;
+    text-align: left;
+    padding-left: 3em;
+    background-color: lightgray;
+    color: rgb(45, 40, 40);
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    padding: 1em 1em;
+}
+
+@media only screen and (max-width: 943px) {
+    .description {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    [class*="col-"] {
+          width: 100%;
+    }
+
+    header img {
+        width: 250px;
+        height: auto;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    nav ul li {
+        margin: .5em .5em;
+        padding-bottom: 1em;
+    }
+
+    .main_home {
+        background-size: 100% 100%;
+    
+    }
+
+    .section_home p {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .span_home {
+        flex-direction: column;
+    }
+
+    .main_menu {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 5px;
+    }
+
+    .main_menu ul li {
+        text-align: left;
+    }
+
+    .description {
+        height: 125px;
+    }
+
+    .main_menu img {
+        width: 250px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main_about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_about p {
+        width: 430px;
+    }
+}
